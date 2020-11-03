@@ -16,9 +16,9 @@ class Song
     song = Song.new(file)
     str = file.delete_suffix(".mp3")
     strArr = str.split("-")
-    song.name = strArr[1]
-    song.genre = strArr[2]
-    artist_name = strArr[0]
+    song.name = strArr[1].strip
+    song.genre = strArr[2].strip
+    artist_name = strArr[0].strip
     song
   end
 
