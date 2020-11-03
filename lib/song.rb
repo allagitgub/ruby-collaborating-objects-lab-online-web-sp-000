@@ -13,6 +13,7 @@ class Song
   end
 
   def self.new_by_filename(file)
+    puts "self.new_by_filename on the song gets called"
     song = Song.new(file)
     str = file.delete_suffix(".mp3")
     strArr = str.split("-")
