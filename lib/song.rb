@@ -19,7 +19,7 @@ class Song
     strArr = str.split("-")
     song.name = strArr[1].strip
     song.genre = strArr[2].strip
-    artist_name = strArr[0].strip
+    artist_name=(strArr[0].strip)
     puts "Song ARTIST"
     puts song.artist
     puts song.artist.name
