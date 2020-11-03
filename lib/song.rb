@@ -20,12 +20,10 @@ class Song
     song.name = strArr[1].strip
     song.genre = strArr[2].strip
     song.artist_name = strArr[0].strip
-    puts "Song ARTIST"
     song
   end
 
   def artist_name=(name)
-    puts "DDES IS GET CALLED?"
     artist = find_or_create_by_name(name)
     artist.add_song(self)
   end
